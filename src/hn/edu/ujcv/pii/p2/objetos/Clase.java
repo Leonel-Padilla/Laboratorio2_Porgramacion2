@@ -12,6 +12,8 @@ public abstract class Clase implements IClase{
     private int    NR;
     private String Nombre;
     private int    UnidadesValorativas;
+    private static final double ValorParcial1Y2 = 0.3;
+    private static final double ValorParcial3 = 0.4;
 
     public Clase(){
     }
@@ -128,9 +130,9 @@ public abstract class Clase implements IClase{
 
     @Override
     public double CalcularNotaFinal(){
-        double nota1 = (NE1 + NA1)*0.3;
-        double nota2 = (NE2 + NA2)*0.3;
-        double nota3 = (NE3 + NA3)*0.4;
+        double nota1 = (NE1 + NA1)* ValorParcial1Y2;
+        double nota2 = (NE2 + NA2)* ValorParcial1Y2;
+        double nota3 = (NE3 + NA3)*ValorParcial3;
         double notaFinal = nota1+nota2+nota3;
 
 

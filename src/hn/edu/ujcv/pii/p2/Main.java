@@ -18,7 +18,7 @@ public class Main {
         ListaHistoriales listaHistoriales  = new ListaHistoriales();
 
 
-       // try {
+        try {
             int opcion;
             do {
                 System.out.println("¿Que desea hacer?");
@@ -67,9 +67,9 @@ public class Main {
 
 
 
-           /* }catch(Exception e){
+            }catch(Exception e){
                 System.err.println("ERROR!" + e.getMessage());
-            }*/
+            }
             //-----
         }
 

@@ -2,8 +2,8 @@ package hn.edu.ujcv.pii.p2.objetos;
 
 public class Ingenieria extends General{
     private int NotaProyecto;
-    private static final double ValorParcial1Y2 = 0.3;
-    private static final double ValorParcial3 = 0.4;
+    private static final double VALORPARCIAL1Y2 = 0.3;
+    private static final double VALORPARCIAL3 = 0.4;
 
     public Ingenieria(){
         super();
@@ -23,9 +23,9 @@ public class Ingenieria extends General{
 
     @Override
     public double CalcularNotaFinal(){
-        double nota1 = (super.getNE1() + super.getNA1())*ValorParcial1Y2;
-        double nota2 = (super.getNE2() + super.getNA2())*ValorParcial1Y2;
-        double nota3 = (super.getNE3() + super.getNA3() + getNotaProyecto())*ValorParcial3;
+        double nota1 = (super.getNE1() + super.getNA1())* VALORPARCIAL1Y2;
+        double nota2 = (super.getNE2() + super.getNA2())* VALORPARCIAL1Y2;
+        double nota3 = (super.getNE3() + super.getNA3() + getNotaProyecto())* VALORPARCIAL3;
 
         double notaFinal = nota1+nota2+nota3;
         return notaFinal;

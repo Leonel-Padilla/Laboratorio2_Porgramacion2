@@ -2,8 +2,8 @@ package hn.edu.ujcv.pii.p2.objetos;
 
 public class General extends Clase{
     private boolean TodasCarreras;
-    private static final double ValorParcial1Y2 = 0.3;
-    private static final double ValorParcial3 = 0.4;
+    private static final double VALORPARCIAL1Y2 = 0.3;
+    private static final double VALORPARCIAL3 = 0.4;
 
     public General(){
         super();
@@ -30,9 +30,9 @@ public class General extends Clase{
     @Override
     public double CalcularNotaFinal(){
 
-        double nota1 = (getNE1() + getNA1())* ValorParcial1Y2;
-        double nota2 = (getNE2() + getNA2())* ValorParcial1Y2;
-        double nota3 = (getNE3() + getNA3())*ValorParcial3;
+        double nota1 = (getNE1() + getNA1())* VALORPARCIAL1Y2;
+        double nota2 = (getNE2() + getNA2())* VALORPARCIAL1Y2;
+        double nota3 = (getNE3() + getNA3())* VALORPARCIAL3;
         double notaFinal = nota1+nota2+nota3;
 
         return notaFinal;
